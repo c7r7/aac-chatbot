@@ -1,0 +1,9 @@
+flask
+torch
+transformers
+sentence-transformers
+unsloth
+faiss-cpu
+pymupdf
+peft
+bitsandbytes
