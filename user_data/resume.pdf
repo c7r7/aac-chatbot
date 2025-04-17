@@ -1,0 +1,61 @@
+Charan Somalaraju
+ New York
+ +1 716-247-7345 | csomalar@buffalo.edu | linkedin.com/in/Charan-Somalaraju | Personal Website | github.com/c7r7
+ Summary
+ Data-driven AI Engineer with proven expertise in designing and deploying scalable machine learning solutions in dynamic,
+ cloud-native environments. Specializes in transforming complex datasets into actionable insights, leveraging advanced
+ algorithms and deep learning techniques to modernize legacy systems. Demonstrated success at Oracle and AB-InBev in
+ optimizing system performance and delivering real-time data pipelines and production ML models.
+ Skills
+ Languages & Tools: Python, SQL, C, R, Docker, AWS, GCP, Kubernetes, HTML/CSS
+ Frameworks: PyTorch, TensorFlow, Scikit-learn, LangChain, Hugging Face, spaCy, NumPy, Pandas, XGBoost
+ ML &DLTechniques: Supervised Unsupervised Learning, Neural Networks, Feature Engineering, Hyperparameter Tuning,
+ Statistical Modeling, Time Series Analysis, A/B Testing
+ Deep Learning: Transformers (BERT, GPT, ViT) for NLP Computer Vision, Model Deployment (FastAPI, Flask, Streamlit)
+ Development Tools: Jupyter Notebook, Google Colab, MySQL, PostgreSQL, VSCode, Apache Spark
+ Work Experience
+ ML Research Assistant
+ University at Buffalo
+ Dec 2024– Present
+ NY, United States
+ • Working on a AI-driven AAC system integrating (LLMs) and (RAG) to enhance personalized communication for individuals
+ with speech impairments, improving contextual relevance by 35%.
+ • Achieved 30% accuracy improvement on the Empathetic Dialogues dataset, reducing generic responses by 35% through
+ feedback refinement.
+ Associate Consultant
+ Oracle
+ June 2023– Aug 2024
+ Banglore, India
+ • Supported Citibank client across the EMEA region by designing and modifying frontend interfaces using Form Builder.
+ • Enhanced OBCL product features, reducing processing time by 25% and improving UI efficiency for EMEA Citibank clients.
+ Data Scientist Intern
+ AB-InBev
+ Jun 2022– May 2023
+ Banglore,India
+ • Designed, developed, debugged, tested and deployed the project Empties return Forecasting in Africa Logistics Analytics.
+ • Achieved an accuracy of 91% a significant improvement over the previous 67%
+ • Worked on a Materials Planning project in Africa to reduce costs by identifying and focusing on key issues across countries,
+ breweries, and SKUs according to client requirements.
+ Education
+ University at Buffalo, The State University of New York
+ Master’s in Artificial Intelligence
+ Vellore Institute of Technology
+ Bachelor of Technology in Computer Science with specilization in (AI & ML)
+ Publications & Projects
+ Buffalo, NY
+ Chennai, India
+ Grocery Recommendation using Improvised Apriori Algorithm | Python, Machine Learning Publication- Mar 2023
+ • Proposed a model using the Apriori algorithm and chi-squared test to identify seasonal transaction patterns, like festival
+ transactions that occur annually.
+ • Utilized the chi-squared test to detect these seasonal transactions and, if none were found, recommended products based on
+ the traditional Apriori algorithm.
+ UB-LLM | Python, Langchain, Ollama, gpt2, RAG
+ Jan 2025
+ • Built end-to-end LLM model for the university website by web scraping and formatting data using NLP tools, then deployed
+ various Hugging Face models (GPT, DeepSeek) for processing.
+ • Using FAISS for vector storage, I built a pipeline combining retrieval-augmented question answering with a lightweight Phi-3
+ model for generating detailed responses to UB-related queries.
+ Certifications & Achievements
+ • AWS Cloud Practitioner (2024), AI For Everyone- 2023, Software development process and methodologies- 2022,
+ Programming for everybody getting started with python
+ • Led CodeChef-VIT as Design & Operations Lead; Won ’Best Hack for Social Good’ award at TechnoVIT hackathon
