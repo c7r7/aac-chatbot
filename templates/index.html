@@ -1,1 +1,82 @@
 
+<!doctype html>
+<html>
+<head><title>AAC Chatbot</title></head>
+<body>
+    <h2>Tarun is ready to chat!</h2>
+    <div id="chat" style="font-family:Arial; font-size:16px;"></div>
+    <input id="user_input" placeholder="Ask something..." size="60">
+    <button onclick="ask()">Send</button>
+    <ul id="options"></ul>
+    <div id="custom" style="display:none;">
+        <input id="custom_input" placeholder="Type your own response..." size="60" oninput="suggest()">
+        <ul id="suggestions"></ul>
+        <button onclick="submitCustom()">Submit</button>
+    </div>
+    <script>
+        function appendToChat(sender, msg) {
+            document.getElementById("chat").innerHTML += `<b>${sender}:</b> ${msg}<br>`;
+        }
+        function ask() {
+            const msg = document.getElementById("user_input").value;
+            appendToChat("Person", msg);
+            fetch("/predict", {
+                method: "POST",
+                headers: {"Content-Type":"application/json"},
+                body: JSON.stringify({ text: msg })
+            })
+            .then(r => r.json())
+            .then(data => {
+                let html = "";
+                data.options.forEach((opt, i) => {
+                    html += `<li><button onclick="choose(${i})">${opt}</button></li>`;
+                });
+                html += `<li><button onclick="showCustom()">Option 4: Type your own</button></li>`;
+                document.getElementById("options").innerHTML = html;
+            });
+        }
+        function choose(i) {
+            fetch("/choose", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ index: i })
+            })
+            .then(r => r.json())
+            .then(data => appendToChat("Tarun", data.reply));
+        }
+        function showCustom() {
+            document.getElementById("custom").style.display = "block";
+        }
+        function suggest() {
+            const partial = document.getElementById("custom_input").value;
+            fetch("/suggest", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: partial })
+            })
+            .then(r => r.json())
+            .then(data => {
+                let html = "";
+                data.suggestions.forEach(s => {
+                    html += `<li onclick="useSuggestion('${s}')">${s}</li>`;
+                });
+                document.getElementById("suggestions").innerHTML = html;
+            });
+        }
+        function useSuggestion(s) {
+            document.getElementById("custom_input").value = s;
+        }
+        function submitCustom() {
+            const txt = document.getElementById("custom_input").value;
+            appendToChat("Person", txt);
+            fetch("/submit_custom", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: txt })
+            })
+            .then(r => r.json())
+            .then(data => appendToChat("Tarun", data.reply));
+        }
+    </script>
+</body>
+</html>
