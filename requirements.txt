@@ -7,3 +7,4 @@ faiss-cpu
 pymupdf
 peft
 bitsandbytes
+nltk
