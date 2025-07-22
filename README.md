@@ -20,4 +20,5 @@ tecture significantly improves expressiveness
  communication scenarios.
 
 
- 
+ <img width="181" height="47" alt="image" src="https://github.com/user-attachments/assets/5984265b-2655-4cf7-ab97-9ace25380306" />
+
