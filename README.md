@@ -22,3 +22,15 @@ tecture significantly improves expressiveness
 
  <img width="181" height="47" alt="image" src="https://github.com/user-attachments/assets/5984265b-2655-4cf7-ab97-9ace25380306" />
 
+
+ 1. Extract text from his profile
+ 2. Split text into chunks and generate sentence
+ embeddings.
+ 3. Index chunks using FAISS.
+ 4. Retrieve top-k similar chunks for a query.
+ 5. Combine retrieved context with query and
+ pass to Mistral for response generation.
+
+<img width="164" height="82" alt="image" src="https://github.com/user-attachments/assets/1aeb322a-9b79-4666-b540-2762f7990486" />
+
+
